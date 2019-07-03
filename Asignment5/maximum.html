@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<h1>First and second maximum element</h1>
+<script type="text/javascript">
+var data = [40,2,37,120,1]
+var seclarge;
+var firstlarge=0;
+
+for(i=0;i<data.length;i++){
+if(data[i]>firstlarge){
+seclarge=firstlarge;
+firstlarge=data[i];
+}
+else if(data[i]>seclarge&&data[i]!=firstlarge){
+seclarge=data[i];
+}
+}
+console.log("The maximum element in the array is",firstlarge);
+console.log("The second maximum element in the array is",seclarge);
+
+
+
+</script>
+
+</body>
+</html>
